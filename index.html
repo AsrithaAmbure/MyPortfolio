@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asritha Ambure | AIML & Data Analytics Portfolio</title>
-    <!-- Updated ThesisAI v1.1 - 2026-07-31 -->
-    <meta name="description" content="Portfolio of Asritha Ambure - AIML Undergraduate, Machine Learning Engineer, and Data Analyst specializing in AI/ML, Generative AI, and Business Analytics.">
+    <title>Asritha Ambure | AIML Undergraduate & Data Analytics Developer</title>
+    <meta name="description" content="Official portfolio of Asritha Ambure - AIML Undergraduate, Machine Learning Engineer, and Data Analyst specializing in AI/ML, Generative AI, and Business Analytics.">
     <meta name="keywords" content="Asritha Ambure, AIML, Machine Learning, Data Analytics, Python, SQL, Power BI, Prompt Engineering, Software Engineering Portfolio">
     
     <!-- Google Fonts -->
@@ -21,12 +20,14 @@
 </head>
 <body>
 
-    <!-- Ambient Background Lighting -->
-    <div class="bg-glow bg-glow-1"></div>
-    <div class="bg-glow bg-glow-2"></div>
-    <div class="bg-grid-pattern"></div>
+    <!-- Ambient Mesh Lighting -->
+    <div class="bg-mesh">
+        <div class="bg-circle bg-circle-1"></div>
+        <div class="bg-circle bg-circle-2"></div>
+        <div class="bg-grid-overlay"></div>
+    </div>
 
-    <!-- Navigation Bar -->
+    <!-- Sticky Navigation Bar -->
     <header class="navbar-container">
         <nav class="navbar">
             <a href="#hero" class="nav-logo">
@@ -44,9 +45,14 @@
                 <li><a href="#contact" class="nav-link btn-nav-cta">Contact</a></li>
             </ul>
 
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </nav>
     </header>
 
@@ -65,15 +71,15 @@
                         AIML Undergraduate &amp; Data Analytics Developer
                     </h2>
                     <p class="hero-description">
-                        Passionate about building intelligent Machine Learning systems, interactive Data Analytics dashboards, and cutting-edge Generative AI applications.
+                        Passionate about building intelligent Machine Learning models, interactive Data Analytics dashboards, and cutting-edge Generative AI applications.
                     </p>
                     
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fa-solid fa-rocket"></i> View My Projects
-                        </a>
-                        <a href="#contact" class="btn btn-outline">
-                            <i class="fa-solid fa-envelope"></i> Get In Touch
+                        <button onclick="openResumeModal()" class="btn btn-primary">
+                            <i class="fa-solid fa-file-pdf"></i> View Resume
+                        </button>
+                        <a href="#projects" class="btn btn-outline">
+                            <i class="fa-solid fa-rocket"></i> Explore Projects
                         </a>
                     </div>
 
@@ -93,39 +99,51 @@
                     </div>
                 </div>
 
-                <div class="hero-card-wrap">
-                    <div class="glass-card hero-portrait-card">
-                        <div class="portrait-img-box">
-                            <img src="profile.jpg" alt="Asritha Ambure" class="portrait-photo">
-                            <div class="portrait-gradient-overlay"></div>
-                            
-                            <!-- Floating UI Glass Badges -->
-                            <div class="floating-chip chip-top-left">
-                                <i class="fa-solid fa-brain"></i> AI &amp; ML Specialist
-                            </div>
-                            <div class="floating-chip chip-top-right">
-                                <i class="fa-solid fa-chart-line"></i> Data Analyst
-                            </div>
-                            <div class="floating-chip chip-bottom-center">
-                                <i class="fa-solid fa-award"></i> ICTIS 2026 Co-Author
-                            </div>
+                <!-- Right Side Profile Showcase -->
+                <div class="hero-avatar-wrap">
+                    <div class="avatar-card">
+                        <div class="avatar-img-container">
+                            <img src="profile.jpg" alt="Asritha Ambure" class="profile-img">
+                            <div class="avatar-border-glow"></div>
                         </div>
 
-                        <!-- Quick Metrics Footer -->
-                        <div class="quick-metrics">
-                            <div class="metric">
-                                <span class="metric-num">8.42</span>
-                                <span class="metric-label">B.Tech CGPA</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-num">3+</span>
-                                <span class="metric-label">Internships</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-num">1</span>
-                                <span class="metric-label">Springer Paper</span>
-                            </div>
+                        <!-- Floating Badges -->
+                        <div class="floating-badge badge-top-left">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>AI &amp; ML Specialist</span>
                         </div>
+                        <div class="floating-badge badge-top-right">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <span>Data Analyst</span>
+                        </div>
+                        <div class="floating-badge badge-bottom">
+                            <i class="fa-solid fa-award"></i>
+                            <span>ICTIS 2026 Co-Author</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metrics Section Bar -->
+        <section class="metrics-section">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="glass-card metric-card">
+                        <div class="metric-num text-gradient">8.42</div>
+                        <div class="metric-label">B.Tech CGPA (MITS)</div>
+                    </div>
+                    <div class="glass-card metric-card">
+                        <div class="metric-num text-gradient">3+</div>
+                        <div class="metric-label">Industry Internships</div>
+                    </div>
+                    <div class="glass-card metric-card">
+                        <div class="metric-num text-gradient">1</div>
+                        <div class="metric-label">ICTIS 2026 Paper</div>
+                    </div>
+                    <div class="glass-card metric-card">
+                        <div class="metric-num text-gradient">97%</div>
+                        <div class="metric-label">SSC Score</div>
                     </div>
                 </div>
             </div>
@@ -136,7 +154,7 @@
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-tag">Overview</span>
-                    <h2 class="section-title">About Me</h2>
+                    <h2 class="section-title">About Me &amp; Objectives</h2>
                     <div class="title-underline"></div>
                 </div>
 
@@ -144,7 +162,7 @@
                     <div class="glass-card about-text-card">
                         <h3><i class="fa-solid fa-user-gear accent-icon"></i> Professional Summary</h3>
                         <p>
-                            I am an <strong>Artificial Intelligence & Machine Learning (AIML) undergraduate</strong> with strong technical foundations in <strong>Python, SQL, Machine Learning, Generative AI, Prompt Engineering</strong>, and <strong>Data Analytics</strong>.
+                            I am an <strong>Artificial Intelligence &amp; Machine Learning (AIML) undergraduate</strong> with strong technical foundations in <strong>Python, SQL, Machine Learning, Generative AI, Prompt Engineering</strong>, and <strong>Data Analytics</strong>.
                         </p>
                         <p>
                             Through multiple hands-on industry internships, academic training, and research publications, I have developed a strong analytical mindset to solve complex real-world engineering challenges. I excel in turning raw data into actionable business insights and creating scalable AI systems.
@@ -194,7 +212,7 @@
             </div>
         </section>
 
-        <!-- Technical Skills Section -->
+        <!-- Technical Skills Section (NO PROGRESS BARS) -->
         <section id="skills" class="section bg-section">
             <div class="container">
                 <div class="section-header text-center">
@@ -204,79 +222,135 @@
                 </div>
 
                 <div class="skills-grid">
-                    <!-- Programming -->
+                    <!-- Languages -->
                     <div class="glass-card skill-card">
-                        <div class="skill-icon-header">
+                        <div class="skill-card-header">
                             <div class="icon-box"><i class="fa-solid fa-code"></i></div>
-                            <h3>Programming</h3>
+                            <h3>Programming Languages</h3>
                         </div>
-                        <ul class="skill-list">
-                            <li>
-                                <div class="skill-info"><span>Python</span> <span class="skill-percent">Advanced</span></div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-info"><span>SQL (MySQL / PostgreSQL)</span> <span class="skill-percent">Intermediate</span></div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-info"><span>Java</span> <span class="skill-percent">Intermediate</span></div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
-                            </li>
-                        </ul>
+                        <div class="skills-chips-wrapper">
+                            <div class="skill-chip">
+                                <i class="fa-brands fa-python skill-icon python-color"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-solid fa-database skill-icon sql-color"></i>
+                                <span>SQL (MySQL / Postgres)</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-brands fa-java skill-icon java-color"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-brands fa-html5 skill-icon html-color"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-brands fa-css3-alt skill-icon css-color"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-brands fa-js skill-icon js-color"></i>
+                                <span>JavaScript (ES6+)</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Web & Development -->
+                    <!-- Core AI & ML -->
                     <div class="glass-card skill-card">
-                        <div class="skill-icon-header">
-                            <div class="icon-box"><i class="fa-solid fa-globe"></i></div>
-                            <h3>Web & Technologies</h3>
+                        <div class="skill-card-header">
+                            <div class="icon-box"><i class="fa-solid fa-brain"></i></div>
+                            <h3>AI / ML &amp; GenAI</h3>
                         </div>
-                        <ul class="skill-list">
-                            <li>
-                                <div class="skill-info"><span>HTML5 &amp; CSS3</span> <span class="skill-percent">Advanced</span></div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-info"><span>JavaScript / UI Layouts</span> <span class="skill-percent">Intermediate</span></div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 78%;"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-info"><span>Firebase &amp; REST Basics</span> <span class="skill-percent">Intermediate</span></div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 72%;"></div></div>
-                            </li>
-                        </ul>
+                        <div class="skills-chips-wrapper">
+                            <div class="skill-chip accent">
+                                <i class="fa-solid fa-robot"></i>
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="skill-chip accent">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                <span>Prompt Engineering</span>
+                            </div>
+                            <div class="skill-chip accent">
+                                <i class="fa-solid fa-sparkles"></i>
+                                <span>Generative AI</span>
+                            </div>
+                            <div class="skill-chip accent">
+                                <i class="fa-solid fa-microchip"></i>
+                                <span>Large Language Models (LLMs)</span>
+                            </div>
+                            <div class="skill-chip accent">
+                                <i class="fa-solid fa-file-code"></i>
+                                <span>Academic NLP</span>
+                            </div>
+                            <div class="skill-chip accent">
+                                <i class="fa-solid fa-sliders"></i>
+                                <span>Model Evaluation</span>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Tools & Platforms -->
                     <div class="glass-card skill-card">
-                        <div class="skill-icon-header">
+                        <div class="skill-card-header">
                             <div class="icon-box"><i class="fa-solid fa-toolbox"></i></div>
-                            <h3>Tools & Analytics</h3>
+                            <h3>Analytics &amp; Tools</h3>
                         </div>
-                        <div class="badge-grid">
-                            <span class="tech-badge"><i class="fa-solid fa-chart-column"></i> Power BI</span>
-                            <span class="tech-badge"><i class="fa-solid fa-chart-line"></i> Tableau</span>
-                            <span class="tech-badge"><i class="fa-solid fa-file-excel"></i> MS Excel (Advanced)</span>
-                            <span class="tech-badge"><i class="fa-solid fa-cloud"></i> Microsoft Fabric</span>
-                            <span class="tech-badge"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span>
-                            <span class="tech-badge"><i class="fa-solid fa-terminal"></i> VS Code</span>
-                            <span class="tech-badge"><i class="fa-solid fa-book-open"></i> Jupyter Notebook</span>
+                        <div class="skills-chips-wrapper">
+                            <div class="skill-chip">
+                                <i class="fa-solid fa-chart-column"></i>
+                                <span>Power BI</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span>Tableau</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-solid fa-file-excel"></i>
+                                <span>Advanced Excel</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-solid fa-cloud"></i>
+                                <span>Microsoft Fabric</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-brands fa-git-alt"></i>
+                                <span>Git &amp; GitHub</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-solid fa-terminal"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-solid fa-book-open"></i>
+                                <span>Jupyter Notebook</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Core Domains -->
+                    <!-- Soft Skills -->
                     <div class="glass-card skill-card">
-                        <div class="skill-icon-header">
-                            <div class="icon-box"><i class="fa-solid fa-brain"></i></div>
-                            <h3>Core AI Domains</h3>
+                        <div class="skill-card-header">
+                            <div class="icon-box"><i class="fa-solid fa-user-check"></i></div>
+                            <h3>Professional Abilities</h3>
                         </div>
-                        <div class="badge-grid">
-                            <span class="tech-badge accent"><i class="fa-solid fa-robot"></i> Machine Learning</span>
-                            <span class="tech-badge accent"><i class="fa-solid fa-sparkles"></i> Artificial Intelligence</span>
-                            <span class="tech-badge accent"><i class="fa-solid fa-wand-magic-sparkles"></i> Prompt Engineering</span>
-                            <span class="tech-badge accent"><i class="fa-solid fa-database"></i> Data Analytics</span>
-                            <span class="tech-badge accent"><i class="fa-solid fa-brain"></i> Large Language Models (LLMs)</span>
+                        <div class="skills-chips-wrapper">
+                            <div class="skill-chip">
+                                <i class="fa-solid fa-puzzle-piece"></i>
+                                <span>Problem Solving</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-solid fa-people-group"></i>
+                                <span>Teamwork</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-solid fa-crown"></i>
+                                <span>Leadership</span>
+                            </div>
+                            <div class="skill-chip">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Communication</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -288,7 +362,7 @@
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-tag">Industry Training</span>
-                    <h2 class="section-title">Experience & Internships</h2>
+                    <h2 class="section-title">Experience &amp; Internships</h2>
                     <div class="title-underline"></div>
                 </div>
 
@@ -300,7 +374,7 @@
                         <div class="glass-card timeline-content">
                             <div class="exp-header">
                                 <div>
-                                    <h3 class="exp-role">Data Analytics Intern & Trainee</h3>
+                                    <h3 class="exp-role">Data Analytics Intern &amp; Trainee</h3>
                                     <h4 class="exp-company"><i class="fa-solid fa-building"></i> Ethnotech Academy</h4>
                                 </div>
                                 <span class="exp-badge">Data Analytics</span>
@@ -389,8 +463,8 @@
                                 <span>Alert Engine</span>
                             </div>
                             <div class="project-footer">
-                                <a href="https://github.com/AsrithaAmbure/Rock-Fall-Prediction" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                    <i class="fa-brands fa-github"></i> View Code
+                                <a href="https://github.com/anjithkumar-3ab/Rock-Fall-Prediction" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> View Repository
                                 </a>
                             </div>
                         </div>
@@ -433,7 +507,7 @@
                         <div class="project-body">
                             <h3 class="project-title">Data Analytics Dashboard Project</h3>
                             <p class="project-desc">
-                                End-to-end data analytics workflow conducted at Ethnotech Academy. Cleaned and transformed datasets in Excel, applying advanced formulas (VLOOKUP, XLOOKUP, INDEX-MATCH, IF), and constructed interactive KPI dashboards with slicers & pivot charts.
+                                End-to-end data analytics workflow conducted at Ethnotech Academy. Cleaned and transformed datasets in Excel, applying advanced formulas (VLOOKUP, XLOOKUP, INDEX-MATCH, IF), and constructed interactive KPI dashboards with slicers &amp; pivot charts.
                             </p>
                             <div class="project-tech">
                                 <span>Advanced Excel</span>
@@ -442,8 +516,8 @@
                                 <span>Data Cleaning</span>
                             </div>
                             <div class="project-footer">
-                                <a href="https://github.com/AsrithaAmbure" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                    <i class="fa-brands fa-github"></i> Repository
+                                <a href="https://github.com/AsrithaAmbure/Data_Analytics/tree/main/Final%20Project" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> View Final Project
                                 </a>
                             </div>
                         </div>
@@ -457,7 +531,7 @@
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-tag">Research Work</span>
-                    <h2 class="section-title">Publications & Papers</h2>
+                    <h2 class="section-title">Publications &amp; Papers</h2>
                     <div class="title-underline"></div>
                 </div>
 
@@ -530,12 +604,12 @@
             </div>
         </section>
 
-        <!-- Achievements & Activities Section -->
+        <!-- Achievements Section -->
         <section id="achievements" class="section">
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-tag">Recognitions</span>
-                    <h2 class="section-title">Achievements & Leadership</h2>
+                    <h2 class="section-title">Achievements &amp; Leadership</h2>
                     <div class="title-underline"></div>
                 </div>
 
@@ -645,6 +719,26 @@
             </div>
         </section>
     </main>
+
+    <!-- Resume Viewer Modal -->
+    <div id="resume-modal" class="modal">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-file-pdf accent-icon"></i> Asritha Ambure - Resume</h3>
+                <button class="modal-close" onclick="closeResumeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="resume-preview-box">
+                    <i class="fa-solid fa-file-arrow-down modal-pdf-icon"></i>
+                    <h4>Placement Resume (AIML &amp; Data Analytics)</h4>
+                    <p>Asritha_Ambure_Resume.pdf</p>
+                    <a href="mailto:ambureasritha@gmail.com?subject=Request%20for%20Resume%20-%20Asritha%20Ambure" class="btn btn-primary">
+                        <i class="fa-solid fa-download"></i> Download / Request Official PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">

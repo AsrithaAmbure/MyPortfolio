@@ -1,9 +1,44 @@
 /* ==========================================================================
-   Placement Portfolio JavaScript - Asritha Ambure
+   Placement Portfolio JavaScript Engine - Asritha Ambure
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Mobile Menu Toggle ---
+    // --- Dark / Light Theme Toggle System ---
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+
+    // Check saved theme or default to dark
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    htmlElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+            showToast(`Switched to ${newTheme === 'dark' ? 'Dark' : 'Light'} Mode`);
+        });
+    }
+
+    function updateThemeIcon(theme) {
+        if (!themeToggleBtn) return;
+        const icon = themeToggleBtn.querySelector('i');
+        if (icon) {
+            if (theme === 'dark') {
+                icon.className = 'fa-solid fa-sun';
+                themeToggleBtn.title = 'Switch to Light Mode';
+            } else {
+                icon.className = 'fa-solid fa-moon';
+                themeToggleBtn.title = 'Switch to Dark Mode';
+            }
+        }
+    }
+
+    // --- Mobile Navigation Menu Drawer ---
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
 
@@ -20,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Close menu when link is clicked
+        // Close menu when nav item clicked
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -33,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Active Link Highlight on Scroll ---
+    // --- Active Nav Link Highlight on Scroll ---
     const sections = document.querySelectorAll('section[id]');
     
     function highlightNavOnScroll() {
@@ -86,32 +121,29 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+});
 
-    // --- Skill Bars Animation on Scroll ---
-    const skillProgresses = document.querySelectorAll('.skill-progress');
-    let animatedSkills = false;
-
-    function animateSkillBars() {
-        const skillsSection = document.getElementById('skills');
-        if (!skillsSection) return;
-
-        const sectionPos = skillsSection.getBoundingClientRect().top;
-        const screenPos = window.innerHeight / 1.3;
-
-        if (sectionPos < screenPos && !animatedSkills) {
-            skillProgresses.forEach(progress => {
-                const targetWidth = progress.style.width;
-                progress.style.width = '0%';
-                setTimeout(() => {
-                    progress.style.width = targetWidth;
-                }, 100);
-            });
-            animatedSkills = true;
-        }
+// --- Resume Modal Handlers ---
+function openResumeModal() {
+    const modal = document.getElementById('resume-modal');
+    if (modal) {
+        modal.classList.add('active');
     }
+}
 
-    window.addEventListener('scroll', animateSkillBars);
-    animateSkillBars(); // Run once on load
+function closeResumeModal() {
+    const modal = document.getElementById('resume-modal');
+    if (modal) {
+        modal.classList.remove('active');
+    }
+}
+
+// Close modal when clicking background overlay
+window.addEventListener('click', (event) => {
+    const modal = document.getElementById('resume-modal');
+    if (event.target === modal) {
+        closeResumeModal();
+    }
 });
 
 // --- Copy to Clipboard Function ---
@@ -119,7 +151,6 @@ function copyText(text, label) {
     navigator.clipboard.writeText(text).then(() => {
         showToast(`Copied ${label} to clipboard!`);
     }).catch(err => {
-        // Fallback for older browsers
         const textarea = document.createElement('textarea');
         textarea.value = text;
         document.body.appendChild(textarea);
@@ -149,7 +180,6 @@ function handleFormSubmit(event) {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    // Create mailto fallback link for direct email client opening
     const subject = encodeURIComponent(`Inquiry from Portfolio - ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
     
