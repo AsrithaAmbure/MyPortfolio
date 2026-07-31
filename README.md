@@ -8,7 +8,7 @@ Welcome to the official personal portfolio repository of **Asritha Ambure**. Des
 
 ## 🚀 Live Demo & Repository
 - **GitHub Repository**: [https://github.com/AsrithaAmbure/MyPortfolio](https://github.com/AsrithaAmbure/MyPortfolio)
-- **Live Website**: `https://asrithaambure.github.io/MyPortfolio/` *(after enabling GitHub Pages)*
+- **Live Website**: [https://asrithaambure.github.io/MyPortfolio/](https://asrithaambure.github.io/MyPortfolio/)
 
 ---
 
