@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asritha Ambure | AIML & Data Analytics Portfolio</title>
+    <meta name="description" content="Portfolio of Asritha Ambure - AIML Undergraduate, Machine Learning Engineer, and Data Analyst specializing in AI/ML, Generative AI, and Business Analytics.">
+    <meta name="keywords" content="Asritha Ambure, AIML, Machine Learning, Data Analytics, Python, SQL, Power BI, Prompt Engineering, Software Engineering Portfolio">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Background Lighting -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid-pattern"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-container">
+        <nav class="navbar">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-accent">&lt;</span>Asritha<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Research</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link btn-nav-cta">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span> Open for Campus Placements &amp; Roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Asritha Ambure</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        AIML Undergraduate &amp; Data Analytics Developer
+                    </h2>
+                    <p class="hero-description">
+                        Passionate about building intelligent Machine Learning systems, interactive Data Analytics dashboards, and cutting-edge Generative AI applications.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-rocket"></i> View My Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/AsrithaAmbure" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:ambureasritha@gmail.com" class="social-icon" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+917702747632" class="social-icon" title="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card-wrap">
+                    <div class="glass-card hero-portrait-card">
+                        <div class="portrait-img-box">
+                            <img src="profile.jpg" alt="Asritha Ambure" class="portrait-photo">
+                            <div class="portrait-gradient-overlay"></div>
+                            
+                            <!-- Floating UI Glass Badges -->
+                            <div class="floating-chip chip-top-left">
+                                <i class="fa-solid fa-brain"></i> AI &amp; ML Specialist
+                            </div>
+                            <div class="floating-chip chip-top-right">
+                                <i class="fa-solid fa-chart-line"></i> Data Analyst
+                            </div>
+                            <div class="floating-chip chip-bottom-center">
+                                <i class="fa-solid fa-award"></i> ICTIS 2026 Co-Author
+                            </div>
+                        </div>
+
+                        <!-- Quick Metrics Footer -->
+                        <div class="quick-metrics">
+                            <div class="metric">
+                                <span class="metric-num">8.42</span>
+                                <span class="metric-label">B.Tech CGPA</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-num">3+</span>
+                                <span class="metric-label">Internships</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-num">1</span>
+                                <span class="metric-label">Springer Paper</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Overview</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="glass-card about-text-card">
+                        <h3><i class="fa-solid fa-user-gear accent-icon"></i> Professional Summary</h3>
+                        <p>
+                            I am an <strong>Artificial Intelligence & Machine Learning (AIML) undergraduate</strong> with strong technical foundations in <strong>Python, SQL, Machine Learning, Generative AI, Prompt Engineering</strong>, and <strong>Data Analytics</strong>.
+                        </p>
+                        <p>
+                            Through multiple hands-on industry internships, academic training, and research publications, I have developed a strong analytical mindset to solve complex real-world engineering challenges. I excel in turning raw data into actionable business insights and creating scalable AI systems.
+                        </p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Co-Author of Published Paper at ICTIS 2026 (Springer Nature Proceedings)</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>First Prize Winner - AI Protothon 2026</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>National Participant - Smart India Hackathon (2024, 2025)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-side-cards">
+                        <div class="glass-card info-box">
+                            <h4><i class="fa-solid fa-bullseye accent-icon"></i> Career Goal</h4>
+                            <p>Seeking software development, AI/ML engineering, or data analyst roles where I can contribute to groundbreaking AI solutions and data-driven decision making.</p>
+                        </div>
+                        
+                        <div class="glass-card info-box">
+                            <h4><i class="fa-solid fa-heart accent-icon"></i> Interpersonal &amp; Interests</h4>
+                            <div class="pills-flex">
+                                <span class="pill"><i class="fa-solid fa-users"></i> Teamwork</span>
+                                <span class="pill"><i class="fa-solid fa-crown"></i> Leadership</span>
+                                <span class="pill"><i class="fa-solid fa-comments"></i> Communication</span>
+                                <span class="pill"><i class="fa-solid fa-lightbulb"></i> Problem Solving</span>
+                            </div>
+                            <hr class="card-divider">
+                            <div class="interests-tags">
+                                <small class="text-muted">Interests:</small>
+                                <span class="tag">Gardening</span>
+                                <span class="tag">Reading</span>
+                                <span class="tag">Drawing</span>
+                                <span class="tag">Handcrafts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section bg-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Competencies</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming -->
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon-header">
+                            <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                            <h3>Programming</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>
+                                <div class="skill-info"><span>Python</span> <span class="skill-percent">Advanced</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info"><span>SQL (MySQL / PostgreSQL)</span> <span class="skill-percent">Intermediate</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info"><span>Java</span> <span class="skill-percent">Intermediate</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Web & Development -->
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon-header">
+                            <div class="icon-box"><i class="fa-solid fa-globe"></i></div>
+                            <h3>Web & Technologies</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li>
+                                <div class="skill-info"><span>HTML5 &amp; CSS3</span> <span class="skill-percent">Advanced</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info"><span>JavaScript / UI Layouts</span> <span class="skill-percent">Intermediate</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 78%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info"><span>Firebase &amp; REST Basics</span> <span class="skill-percent">Intermediate</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 72%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon-header">
+                            <div class="icon-box"><i class="fa-solid fa-toolbox"></i></div>
+                            <h3>Tools & Analytics</h3>
+                        </div>
+                        <div class="badge-grid">
+                            <span class="tech-badge"><i class="fa-solid fa-chart-column"></i> Power BI</span>
+                            <span class="tech-badge"><i class="fa-solid fa-chart-line"></i> Tableau</span>
+                            <span class="tech-badge"><i class="fa-solid fa-file-excel"></i> MS Excel (Advanced)</span>
+                            <span class="tech-badge"><i class="fa-solid fa-cloud"></i> Microsoft Fabric</span>
+                            <span class="tech-badge"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span>
+                            <span class="tech-badge"><i class="fa-solid fa-terminal"></i> VS Code</span>
+                            <span class="tech-badge"><i class="fa-solid fa-book-open"></i> Jupyter Notebook</span>
+                        </div>
+                    </div>
+
+                    <!-- Core Domains -->
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon-header">
+                            <div class="icon-box"><i class="fa-solid fa-brain"></i></div>
+                            <h3>Core AI Domains</h3>
+                        </div>
+                        <div class="badge-grid">
+                            <span class="tech-badge accent"><i class="fa-solid fa-robot"></i> Machine Learning</span>
+                            <span class="tech-badge accent"><i class="fa-solid fa-sparkles"></i> Artificial Intelligence</span>
+                            <span class="tech-badge accent"><i class="fa-solid fa-wand-magic-sparkles"></i> Prompt Engineering</span>
+                            <span class="tech-badge accent"><i class="fa-solid fa-database"></i> Data Analytics</span>
+                            <span class="tech-badge accent"><i class="fa-solid fa-brain"></i> Large Language Models (LLMs)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Internships Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Industry Training</span>
+                    <h2 class="section-title">Experience & Internships</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2 Months Duration</div>
+                        <div class="glass-card timeline-content">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role">Data Analytics Intern & Trainee</h3>
+                                    <h4 class="exp-company"><i class="fa-solid fa-building"></i> Ethnotech Academy</h4>
+                                </div>
+                                <span class="exp-badge">Data Analytics</span>
+                            </div>
+                            <ul class="exp-bullets">
+                                <li>Mastered end-to-end data processing workflows including Excel, SQL queries, data cleaning, transformation, and business reporting.</li>
+                                <li>Hands-on experience with modern business intelligence tools: <strong>Power BI, Tableau, and Microsoft Fabric</strong>.</li>
+                                <li>Designed interactive executive dashboards and conducted comprehensive business analytics to drive data-informed strategies.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2 Months Duration</div>
+                        <div class="glass-card timeline-content">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role">AI &amp; Prompt Engineering Trainee</h3>
+                                    <h4 class="exp-company"><i class="fa-solid fa-building"></i> VaultsOfCode</h4>
+                                </div>
+                                <span class="exp-badge">AI &amp; GenAI</span>
+                            </div>
+                            <ul class="exp-bullets">
+                                <li>Developed foundational and advanced AI knowledge, specializing in modern Prompt Engineering frameworks and LLM interaction techniques.</li>
+                                <li>Participated in practical AI project development, optimizing prompt accuracy, contextual feedback, and AI platform integration.</li>
+                                <li>Evaluated model responses and refined systematic prompt templates for enhanced generative output quality.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">4 Weeks Duration</div>
+                        <div class="glass-card timeline-content">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role">Machine Learning Intern</h3>
+                                    <h4 class="exp-company"><i class="fa-solid fa-building"></i> Codtech IT Solutions</h4>
+                                </div>
+                                <span class="exp-badge">Machine Learning</span>
+                            </div>
+                            <ul class="exp-bullets">
+                                <li>Practiced core supervised machine learning algorithms, dataset preprocessing pipelines, and feature selection.</li>
+                                <li>Implemented feature engineering techniques and model evaluation metrics (Accuracy, Precision, Recall, F1-Score).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai">AI / ML</button>
+                    <button class="filter-btn" data-filter="analytics">Data Analytics</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="glass-card project-card" data-category="ai">
+                        <div class="project-banner">
+                            <div class="project-tag">SIH 2025 Project</div>
+                            <i class="fa-solid fa-mountain-sun project-bg-icon"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">AI-Based Rockfall Prediction &amp; Alert System</h3>
+                            <p class="project-desc">
+                                A real-time AI prediction and alert system engineered for open-pit mining safety. Processes multi-source geotechnical sensor data to predict potential rockfall hazards and automatically dispatch timely warnings to mine personnel.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>IoT Data</span>
+                                <span>Alert Engine</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/AsrithaAmbure/Rock-Fall-Prediction" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="glass-card project-card" data-category="ai">
+                        <div class="project-banner">
+                            <div class="project-tag">AI Platform</div>
+                            <i class="fa-solid fa-brain project-bg-icon"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Thesis AI – VaultsOfCode</h3>
+                            <p class="project-desc">
+                                A comprehensive smart AI platform offering real-time grammar correction, mathematical step-by-step assistance, and automated text summarization. Integrates a custom <strong>Prompt Accuracy Checker</strong> providing live feedback to optimize prompt quality.
+                            </p>
+                            <div class="project-tech">
+                                <span>GenAI</span>
+                                <span>Prompt Engineering</span>
+                                <span>Firebase Studio</span>
+                                <span>LLMs</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://studio.firebase.google.com/studio-9261648910" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Studio
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="glass-card project-card" data-category="analytics">
+                        <div class="project-banner">
+                            <div class="project-tag">Business Analytics</div>
+                            <i class="fa-solid fa-chart-pie project-bg-icon"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Data Analytics Dashboard Project</h3>
+                            <p class="project-desc">
+                                End-to-end data analytics workflow conducted at Ethnotech Academy. Cleaned and transformed datasets in Excel, applying advanced formulas (VLOOKUP, XLOOKUP, INDEX-MATCH, IF), and constructed interactive KPI dashboards with slicers & pivot charts.
+                            </p>
+                            <div class="project-tech">
+                                <span>Advanced Excel</span>
+                                <span>SQL</span>
+                                <span>Power BI</span>
+                                <span>Data Cleaning</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/AsrithaAmbure" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                    <i class="fa-brands fa-github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publication Section -->
+        <section id="publications" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Research Work</span>
+                    <h2 class="section-title">Publications & Papers</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="glass-card pub-card">
+                    <div class="pub-badge">
+                        <i class="fa-solid fa-book-bookmark"></i> International Conference
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">A Review on Large Language Models in Engineering</h3>
+                        <p class="pub-authors">
+                            <i class="fa-solid fa-users"></i> <strong>Co-Author:</strong> Asritha Ambure (Group Publication)
+                        </p>
+                        <p class="pub-venue">
+                            Presented at the <strong>11th International Conference on Information and Communication Technology for Intelligent Systems (ICTIS 2026)</strong>, Bangkok, Thailand.
+                        </p>
+                        <div class="pub-meta">
+                            <span class="meta-tag"><i class="fa-solid fa-award"></i> Springer Nature Proceedings</span>
+                            <span class="meta-tag"><i class="fa-solid fa-user-pen"></i> Co-Author</span>
+                            <span class="meta-tag"><i class="fa-solid fa-globe"></i> Bangkok, Thailand</span>
+                            <span class="meta-tag"><i class="fa-solid fa-microchip"></i> Large Language Models</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section bg-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Academics</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="edu-grid">
+                    <!-- B.Tech -->
+                    <div class="glass-card edu-card accent-border">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="edu-details">
+                            <span class="edu-score-badge">CGPA: 8.42</span>
+                            <h3 class="edu-degree">B.Tech – Artificial Intelligence &amp; Machine Learning</h3>
+                            <h4 class="edu-school">Madanapalle Institute of Technology &amp; Science (MITS)</h4>
+                            <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Madanapalle, Andhra Pradesh</p>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="glass-card edu-card">
+                        <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                        <div class="edu-details">
+                            <span class="edu-score-badge">93.8%</span>
+                            <h3 class="edu-degree">Intermediate (MPC)</h3>
+                            <h4 class="edu-school">Narayana Junior College</h4>
+                            <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Kadapa, Andhra Pradesh</p>
+                        </div>
+                    </div>
+
+                    <!-- SSC -->
+                    <div class="glass-card edu-card">
+                        <div class="edu-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="edu-details">
+                            <span class="edu-score-badge">97%</span>
+                            <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+                            <h4 class="edu-school">Sri Chaitanya High School</h4>
+                            <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Proddatur, Andhra Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Activities Section -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Recognitions</span>
+                    <h2 class="section-title">Achievements & Leadership</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="glass-card achievement-card">
+                        <div class="ach-icon gold"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="ach-text">
+                            <h3>First Prize Winner</h3>
+                            <p>AI Protothon, MITS College (AI Department) (2026)</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card achievement-card">
+                        <div class="ach-icon cyan"><i class="fa-solid fa-code-fork"></i></div>
+                        <div class="ach-text">
+                            <h3>Smart India Hackathon Participant</h3>
+                            <p>National level hackathon participant for 2 consecutive years (2024 &amp; 2025)</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card achievement-card">
+                        <div class="ach-icon purple"><i class="fa-solid fa-user-group"></i></div>
+                        <div class="ach-text">
+                            <h3>Event Coordinator</h3>
+                            <p>AIMEX (AIML Department) &amp; IEEE Campus Activities</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card achievement-card">
+                        <div class="ach-icon blue"><i class="fa-solid fa-certificate"></i></div>
+                        <div class="ach-text">
+                            <h3>Professional Memberships</h3>
+                            <p>ISTE Student Member (2025-2027) &amp; IEEE Student Member (2024-2025)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Reach Out</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-wrap">
+                    <div class="glass-card contact-info-card">
+                        <h3>Let's Connect!</h3>
+                        <p>I am actively seeking job opportunities and campus placements in Software Engineering, AI/ML, and Data Analytics. Feel free to connect!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <small>Email Me</small>
+                                    <a href="mailto:ambureasritha@gmail.com" id="copy-email">ambureasritha@gmail.com</a>
+                                </div>
+                                <button class="copy-btn" onclick="copyText('ambureasritha@gmail.com', 'Email')" title="Copy Email">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <small>Call Me</small>
+                                    <a href="tel:+917702747632">+91-7702747632</a>
+                                </div>
+                                <button class="copy-btn" onclick="copyText('+917702747632', 'Phone Number')" title="Copy Phone">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                                <div>
+                                    <small>GitHub Profile</small>
+                                    <a href="https://github.com/AsrithaAmbure" target="_blank" rel="noopener noreferrer">github.com/AsrithaAmbure</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card contact-form-card">
+                        <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="e.g. Recruiter / HR Manager">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="name@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="4" required placeholder="Hi Asritha, we would like to discuss an opportunity..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 <strong>Asritha Ambure</strong>. All rights reserved.</p>
+            <p class="footer-subtext">Designed for Placements &amp; Built with <i class="fa-solid fa-heart accent-red"></i></p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
